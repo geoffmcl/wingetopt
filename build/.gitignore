@@ -1,0 +1,8 @@
+*.vcxproj
+*.filters
+Debug/*
+Release/*
+bldlog-1.txt
+getopt.dir/*
+*.sln
+x64/*
