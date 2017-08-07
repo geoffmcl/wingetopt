@@ -52,10 +52,11 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <string.h>
-#include <getopt.h>
 #include <stdarg.h>
 #include <stdio.h>
-#include <windows.h>
+/* #include <windows.h> // is this required? */
+/* local headers */
+#include "getopt.h"
 
 #define	REPLACE_GETOPT		/* use this getopt as the system getopt(3) */
 
@@ -560,3 +561,5 @@ getopt_long_only(int nargc, char * const *nargv, const char *options,
 	return (getopt_internal(nargc, nargv, options, long_options, idx,
 	    FLAG_PERMUTE|FLAG_LONGONLY));
 }
+
+/* eof */
